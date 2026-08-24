@@ -43,7 +43,7 @@ button { color: inherit; font: inherit; }
 .home-hero h1 { margin: 0; font-size: clamp(58px, 8.3vw, 112px); line-height: .88; letter-spacing: -.065em; font-weight: 800; }
 .home-hero h1 span { color: var(--coral); }
 .hero-name { margin: 30px 0 0; font-size: clamp(18px, 2vw, 25px); font-weight: 600; letter-spacing: .02em; }
-.hero-description { max-width: 610px; margin: 12px 0 0; color: var(--muted); font-size: clamp(15px, 1.4vw, 18px); }
+.hero-description { width: min(100%, 640px); margin: 12px 0 0; color: var(--muted); font-size: clamp(15px, 1.4vw, 18px); line-height: 1.8; word-break: keep-all; overflow-wrap: break-word; }
 .hero-actions { display: flex; align-items: center; gap: 30px; margin-top: 32px; }
 .outline-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 50px; min-width: 210px; padding: 13px 18px; border: 2px solid var(--white); border-radius: 12px; font-size: 12px; font-weight: 700; letter-spacing: .08em; transition: background .2s, color .2s, transform .2s; }
 .outline-button:hover { background: var(--white); color: #fff; transform: translateY(-3px); }
@@ -190,7 +190,7 @@ button { color: inherit; font: inherit; }
   .page-width { width: min(100% - 36px, 1080px); }
   .home-hero { min-height: 720px; padding: 120px 22px 90px; }
   .hero-content { max-width: 100%; }
-  .hero-description { overflow-wrap: anywhere; }
+  .hero-description { width: calc(100% - 8px); padding-right: 8px; word-break: keep-all; overflow-wrap: anywhere; }
   .home-hero h1 { font-size: clamp(53px, 16vw, 76px); }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }
   .scroll-mark { display: none; }
